@@ -1,0 +1,6 @@
+mixin scripts(results)
+    script(src="libs/materialize-css/dist/js/materialize.min.js")
+    script(src="libs/chart.js/dist/Chart.min.js")
+    script.
+        const results = !{JSON.stringify(results)};
+    script(src="static/js/main.js")

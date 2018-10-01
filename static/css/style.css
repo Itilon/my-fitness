@@ -1,0 +1,142 @@
+.main-header {
+    background: url('../img/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-header .navbar-custom {
+    background: rgba(120, 120, 120, 0.8);
+}
+
+.navbar-custom a.active,
+.sidenav a.active {
+    color: #ff9800;
+}
+
+.main-header .showcase {
+    padding-top: 28vh;
+}
+
+.sidenav img {
+    border: 2px solid #fff;
+}
+
+.showcase .btn-custom {
+    margin: 8px 10px;
+    background: rgba(120, 120, 120, 0.5);
+    border: 1px solid #fff;
+}
+
+.background-img-custom {
+    background: url('../img/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 84%;
+    margin: 10px 0;
+    border-radius: 50%; 
+}
+
+.background-img-custom::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.section-about .btn-custom {
+    background: rgba(175, 170, 170, 0.8);
+    border: 1px solid #fff;
+}
+
+.section-my-way .chart-container {
+    position: relative;
+    height: 480px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section-my-way .btn-custom {
+    border: 1px solid #fff;
+}
+
+.section-interlude .carousel {
+    max-height: 140px;
+}
+
+.section-interlude .carousel .carousel-item {
+    min-height: 0;
+}
+
+.section-gallery .card-panel {
+    padding: 4px;
+}
+
+.section-contact .btn-extend {
+    display: block;
+    width: 100%;
+}
+
+.section-contact {
+    color: #fff;
+}
+
+.section-footer {
+    padding: 0.4rem;
+}
+
+@media(max-width: 1032px) {
+    .section-my-way .chart-container {
+        height: 380px;
+    }
+}
+
+@media(max-width: 992px) {
+    .section-my-way .chart-container {
+        height: 360px;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-my-way .chart-container {
+        height: 320px;
+    }
+}
+
+@media(max-width: 600px) {
+    .main-header { 
+        height: 50vh;
+    }
+
+    .main-header .showcase {
+        padding-top: 8vh;
+    }
+
+    .main-header .showcase a {
+        display: none;
+    }
+
+    .background-img-custom {
+        margin: 10px auto;
+    }
+
+    .section-my-way .chart-container {
+        height: 280px;
+    }
+}
+
+@media(max-width: 480px) {
+    .section-my-way .chart-container {
+        height: 240px;
+    }
+
+    .section-interlude .carousel {
+        max-height: 180px;
+    }
+}
+
+@media(max-width: 360px) {
+    .section-interlude .carousel {
+        max-height: 200px;
+    }
+}

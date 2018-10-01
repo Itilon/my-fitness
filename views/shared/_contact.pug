@@ -1,0 +1,42 @@
+mixin contact
+    section#contact.scrollspy.section.section-contact.grey.darken-4.white-text
+        .container
+            .row
+                .col.s12.m5
+                    h5
+                        span.orange-text Започни  
+                        | промяната още днес
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at itaque provident? Ratione non magnam harum temporibus. Sunt voluptatibus et distinctio. Est ducimus perspiciatis impedit, dicta necessitatibus dolorem temporibus rem.
+                    h5 
+                        span.orange-text Свържи се 
+                        | с мен
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut saepe sed tenetur autem inventore corporis tempora exercitationem, hic distinctio porro nisi quam maxime aperiam asperiores mollitia voluptate blanditiis esse eligendi?
+                    h5 
+                        span.orange-text Разбери 
+                        | как мога да съм ти полезен
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eveniet ducimus cupiditate suscipit ex nisi fuga, aspernatur maiores et ut, non voluptatum, quaerat vero error accusamus aperiam omnis sit ea.
+                .col.s12.m7
+                    .card-panel.z-depth-5.grey.darken-2
+                        form
+                            .input-field
+                                input#first-name(type="text")
+                                label(for="first-name") Име
+                            .input-field
+                                input#middle-name(type="text")
+                                label(for="middle-name") Презиме
+                            .input-field
+                                input#last-name(type="text")
+                                label(for="last-name") Фамилия
+                            .input-field
+                                input#email(type="email")
+                                label(for="email") Електронна поща
+                            .input-field
+                                select#goal
+                                    option(value="" disabled select) Каква е целта ти?
+                                    option(value="slim") Да отслабна
+                                    option(value="strong") Да стана по-силен
+                                    option(value="healthy") Да живея по-здравословно
+                                    option(value="sport") Да се подготвя за състезание
+                                    option(value="other") Друго
+                                label(for="goal") Цел
+                            button.btn.btn-large.btn-extend.orange Запиши се

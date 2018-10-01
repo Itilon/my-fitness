@@ -1,0 +1,38 @@
+extends shared/_master
+include shared/_navigation
+include shared/_sidenav
+include shared/_about
+include shared/_achievement
+include shared/_interlude
+include shared/_gallery
+include shared/_contact
+include shared/_footer
+include shared/_scripts
+
+block body
+    header#home.scrollspy.navbar-fixed.main-header
+        +navigation
+        .container.showcase
+            .row
+                .col.s12.m10.offset-m1.center
+                    h1 
+                        span.orange-text my
+                        | Fitness
+                    p Тялото, за което винаги си мечтал. Здравето, което винаги си желал.
+                    a.btn.btn-large.z-depth-5.orange-text.btn-custom(href="/about") Научи повече
+                    a.btn.btn-large.z-depth-5.orange-text.btn-custom(href="#contact") Запиши се
+    +sidenav
+
+    +about
+    
+    +achievement
+
+    +interlude(quotes)
+
+    +gallery
+
+    +contact
+
+    +footer
+
+    +scripts(results)

@@ -1,0 +1,25 @@
+{
+  "name": "myfitness",
+  "version": "1.0.0",
+  "description": "A fitness trainer website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp server",
+    "dev": "gulp dev"
+  },
+  "author": "Yuri Ivanov",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.7.2",
+    "express": "^4.16.3",
+    "materialize-css": "^1.0.0",
+    "mongoose": "^5.2.17",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
+  }
+}

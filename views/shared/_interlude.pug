@@ -1,0 +1,12 @@
+mixin interlude(quotes)
+    section.section.section-interlude.brown.lighten-4
+        .container
+            .row
+                .col.s12.m10.offset-m1
+                    .carousel.carousel-slider
+                        each quote in quotes
+                            .carousel-item(href="#" + quote.number + "!")
+                                blockquote.center
+                                    p
+                                        q=quote.quote
+                                    cite.right=quote.author
