@@ -15,8 +15,8 @@ const attachTo = (app, controllers) => {
         .get('*', postController.getWrongPage);
 
     app.use('/', router);
-}
+};
 
 module.exports = {
     attachTo
-}
+};

@@ -1,6 +1,14 @@
 extends shared/_master
-include shared/_navigation
 include shared/_footer
 
 block body
+    .main-section
+        .overlay
+            .container.showcase
+                .row
+                    .col.s12.m10.offset-m1.center
+                        h1 
+                            span.orange-text 404
+                        h3 Нещо се обърка. Страницата, която търсиш, не може да бъде открита.
+                        a.btn.btn-large.z-depth-5.orange-text.btn-custom(href="/") Върни се в началото
     +footer
