@@ -19,19 +19,19 @@ mixin contact
                     .card-panel.z-depth-5.grey.darken-2
                         form
                             .input-field
-                                input#first-name(type="text")
+                                input#first-name(type="text" minlength="3" maxlength="15" required)
                                 label(for="first-name") Име
                             .input-field
-                                input#middle-name(type="text")
+                                input#middle-name(type="text" minlength="3" maxlength="15" required)
                                 label(for="middle-name") Презиме
                             .input-field
-                                input#last-name(type="text")
+                                input#last-name(type="text" minlength="3" maxlength="15" required)
                                 label(for="last-name") Фамилия
                             .input-field
-                                input#email(type="email")
+                                input#email(type="email" required)
                                 label(for="email") Електронна поща
                             .input-field
-                                select#goal
+                                select#goal(required)
                                     option(value="" disabled select) Каква е целта ти?
                                     option(value="slim") Да отслабна
                                     option(value="strong") Да стана по-силен

@@ -1,7 +1,13 @@
 const init = (db) => {
     const resultSchema = new db.Schema({
-        weight: Number,
-        date: Date
+        weight: {
+            type: Number,
+            required: true
+        },
+        date: {
+            type: Date,
+            required: true
+        }
     });
 
     const Result = db.model('Result', resultSchema);

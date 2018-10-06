@@ -1,4 +1,4 @@
-mixin navigation
+mixin navigation(links)
     nav.navbar-custom
         .container
             .nav-wrapper
@@ -8,13 +8,7 @@ mixin navigation
                 a.sidenav-trigger(href="#" data-target="mobile-nav")
                     i.fa.fa-bars
                 ul.right.hide-on-med-and-down
-                    li
-                        a(href="#home") Начало
-                    li
-                        a(href="#about") Кой съм аз
-                    li
-                        a(href="#my-way") Моят път
-                    li
-                        a(href="#gallery") Галерия
-                    li
-                        a(href="#contact") За контакт
+                    each link in links
+                        li
+                            a(href=link.link)
+                                =link.name

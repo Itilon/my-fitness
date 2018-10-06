@@ -1,13 +1,17 @@
 const init = (db) => {
-    const Quote = require('./models/quote.model').init(db);
-    const quotes = require('./quotes.data').init(Quote);
+    const quotes = require('./quotes.data')
+            .init(require('./models/quote.model').init(db));
 
-    const Result = require('./models/result.model').init(db);
-    const results = require('./results.data').init(Result);
+    const results = require('./results.data')
+            .init(require('./models/result.model').init(db));
+
+    const links = require('./links.data')
+            .init(require('./models/link.model').init(db));
 
     return Promise.resolve({
         quotes: quotes,
-        results: results
+        results: results,
+        links: links
     });
 };
 

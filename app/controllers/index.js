@@ -1,8 +1,9 @@
 const init = (data) => {
+    const getController = require('./get.controller').init(data);
     const postController = require('./post.controller').init(data);
 
     const controllers = {
-        postController
+        getController
     };
 
     return controllers;
@@ -10,4 +11,4 @@ const init = (data) => {
 
 module.exports = {
     init
-}
+};

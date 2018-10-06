@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar-custom');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+            navbar.classList.add('navbar-custom-scrolled');
+            navbar.classList.remove('navbar-custom');
+        } else {
+            navbar.classList.add('navbar-custom');
+            navbar.classList.remove('navbar-custom-scrolled');
+        }
+    })    
+
     const sidenav = document.querySelector('.sidenav');
     M.Sidenav.init(sidenav, {});
 

@@ -11,7 +11,7 @@ include shared/_scripts
 
 block body
     header#home.scrollspy.navbar-fixed.main-header
-        +navigation
+        +navigation(links)
         .container.showcase
             .row
                 .col.s12.m10.offset-m1.center
@@ -19,9 +19,9 @@ block body
                         span.orange-text my
                         | Fitness
                     p Тялото, за което винаги си мечтал. Здравето, което винаги си желал.
-                    a.btn.btn-large.z-depth-5.orange-text.btn-custom(href="/about") Научи повече
-                    a.btn.btn-large.z-depth-5.orange-text.btn-custom(href="#contact") Запиши се
-    +sidenav
+                    a.btn.btn-large.z-depth-5.orange-text.btn-custom.hide-on-small-only(href="/about") Научи повече
+                    a.btn.btn-large.z-depth-5.orange-text.btn-custom.hide-on-small-only(href="#contact") Запиши се
+    +sidenav(links)
 
     +about
     

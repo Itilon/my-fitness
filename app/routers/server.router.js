@@ -3,16 +3,16 @@ const { Router } = require('express');
 const attachTo = (app, controllers) => {
     const router = new Router;
 
-    const { postController } = controllers;
+    const { getController } = controllers;
 
     router
-        .get('/', postController.getHome)
+        .get('/', getController.getHome)
         
-        .get('/about', postController.getAbout)
+        .get('/about', getController.getAbout)
 
-        .get('/404', postController.get404)
+        .get('/404', getController.get404)
 
-        .get('*', postController.getWrongPage);
+        .get('*', getController.getWrongPage);
 
     app.use('/', router);
 };

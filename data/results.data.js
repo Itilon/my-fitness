@@ -1,12 +1,8 @@
+const dataController = require('./controllers/get.data.controller').init();
+
 const init = (Result) => {
     async function getAll() {
-        try {
-            const results = await Result.find();
-            return results;
-        }
-        catch(err) {
-            console.error(err.message);
-        }
+        return dataController.getAll(Result);
     }
 
     return {
