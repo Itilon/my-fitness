@@ -8,10 +8,14 @@ const init = (db) => {
     const links = require('./links.data')
             .init(require('./models/link.model').init(db));
 
+    const clients = require('./clients.data')
+            .init(require('./models/client.model').init(db));
+
     return Promise.resolve({
         quotes: quotes,
         results: results,
-        links: links
+        links: links,
+        clients: clients
     });
 };
 

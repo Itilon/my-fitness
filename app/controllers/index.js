@@ -3,7 +3,8 @@ const init = (data) => {
     const postController = require('./post.controller').init(data);
 
     const controllers = {
-        getController
+        getController,
+        postController
     };
 
     return controllers;

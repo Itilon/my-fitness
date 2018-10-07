@@ -7,7 +7,7 @@ const init = () => {
         catch(err) {
             console.error(err.message);
         }
-    }
+    };
 
     return {
         getAll

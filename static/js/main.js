@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar-custom');
 
+    if (window.scrollY > 200) {
+        navbar.classList.add('navbar-custom-scrolled');
+        navbar.classList.remove('navbar-custom');
+    }
+
     window.addEventListener('scroll', function() {
         if (window.scrollY > 200) {
             navbar.classList.add('navbar-custom-scrolled');
@@ -9,13 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.add('navbar-custom');
             navbar.classList.remove('navbar-custom-scrolled');
         }
-    })    
+    });    
 
     const sidenav = document.querySelector('.sidenav');
     M.Sidenav.init(sidenav, {});
 
     const scrollspy = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(scrollspy, {});
+    M.ScrollSpy.init(scrollspy, {
+        scrollOffset: 180
+    });
 
     const imgs = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(imgs, {});
@@ -60,7 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         beginAtZero: false
                     }
                 }]
+            },
+            layout: {
+                padding: {
+                    top: 5,
+                    right: 10,
+                    bottom: 5,
+                    left: 10,
+                }
             }
         }
     });
-})
+});

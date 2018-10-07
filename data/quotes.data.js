@@ -1,8 +1,8 @@
-const dataController = require('./controllers/get.data.controller').init();
+const { getDataController } = require('./controllers').init();
 
 const init = (Quote) => {
     async function getAll() {
-        return dataController.getAll(Quote);
+        return getDataController.getAll(Quote);
     }
 
     return {
