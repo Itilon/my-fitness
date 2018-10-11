@@ -17,7 +17,17 @@ const init = (data) => {
     };
 
     const getAbout = (req, res) => {
-        res.render('about');
+        const links = [
+            {name: 'Кой съм аз', link: "about"}, 
+            {name: 'За контакт', link: '#contact'}
+        ];
+
+        const isAbout = true;
+
+        res.render('about', {
+            links: links,
+            isAbout: isAbout
+        });
     };
 
     const get404 = (req, res) => {

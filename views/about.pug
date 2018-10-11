@@ -1,10 +1,32 @@
 extends shared/_master
 include shared/_navigation
+include shared/_sidenav
 include shared/_contact
 include shared/_footer
 include shared/_scripts
 
 block body
+    header#home.scrollspy.navbar-fixed.main-header-about
+        +navigation(links)
+        .container.showcase
+            .row
+                .col.s12.m10.offset-m1.center
+                    h1 
+                        span.orange-text my
+                        | Fitness
+
+    section#about.scrollspy.section.section-about
+        .container
+            .row
+                .col.s12.m12
+                    .card.grey.darken-4
+                        .card-content.white-text
+                            span.card-title.center
+                                span.orange-text.text-darken-1 За 
+                                | мен
+
+    +sidenav(links)
+
     +contact
 
     +footer

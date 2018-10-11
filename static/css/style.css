@@ -90,6 +90,28 @@
     padding: 0.4rem;
 }
 
+/* ABOUT PAGE */
+
+.main-header-about {
+    background: url('../img/about-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #fff;
+}
+
+.main-header-about .navbar-custom {
+    background: rgba(120, 120, 120, 0.4);
+}
+
+.main-header-about .navbar-custom-scrolled {
+    background: rgba(120, 120, 120, 1);
+}
+
+.main-header-about .showcase {
+    padding-top: 14vh;
+}
+
 /* 404 PAGE STYLING */
 
 .main-section {

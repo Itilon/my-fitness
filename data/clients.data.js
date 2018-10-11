@@ -1,6 +1,4 @@
-const { getDataController, createDataController } = require('./controllers').init();
-
-const init = (Client) => {
+const init = (Client, createDataController) => {
     async function createClient(options) {
         return createDataController.createOne(Client, options);
     }
